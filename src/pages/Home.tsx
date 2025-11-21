@@ -1,5 +1,6 @@
 import Background from "../components/Background";
 import Header from "../components/Header";
+import SectionUpload from "../components/SectionUpload";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -13,7 +14,9 @@ export default function Home() {
           />
         }
         footer={<Footer />}
-      ></Background>
+      >
+        <SectionUpload />
+      </Background>
     </>
   );
 }
