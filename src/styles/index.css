@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "Inter", system-ui;
+  --font-secondary: "Space Grotesk", system-ui;
+  --text-color-white: "#f6f6f8";
+  --text-color-gray:"#979eaa"
+  --bg-color-blue: "#3C7CFF";
+  --text-color-backgound: "#101622";
+}
