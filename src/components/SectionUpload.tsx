@@ -47,12 +47,15 @@ export default function SectionUpload() {
 
         <div className="text-[#f6f6f8] flex gap-5 justify-center">
           {dataValuesInput.map((item, index) => (
-            <div key={index} className="border border-gray-700 rounded-sm p-5 border-dashed bg-black/10">
-              <div className="flex gap-3">
+            <div key={index} className="border border-gray-700 rounded-sm p-5 border-dashed bg-black/10 flex items-center gap-20">
+              <div>
+                <img src={index} alt="sdsd" />
+              </div>
+              <div className="flex gap-3 items-center">
                 <p>{item.name}</p>
-                <div className="flex items-center justify-center gap-2 bg-[#1f2937] px-3 py-1 rounded-sm">
-                  <HiDocumentArrowDown />
-                  <p>{item.type.split("/").pop()}</p>
+                <div className="flex items-center justify-center gap-1 bg-[#1f2937] px-3 py-1 rounded-sm">
+                  <HiDocumentArrowDown fontSize={19} />
+                  <p>{"." + item.type.split("/").pop()}</p>
                 </div>
               </div>
             </div>
