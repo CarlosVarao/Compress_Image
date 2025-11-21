@@ -4,7 +4,7 @@ import { BsLinkedin } from "react-icons/bs";
 export default function Footler() {
   return (
     <div className="w-full border-t border-gray-200/80 dark:border-white/10 font-primary text-sm font-normal text-[#979eaa]">
-      <div className="max-w-5xl mx-auto px-5 py-10 flex flex-col gap-10">
+      <div className="max-w-4xl mx-auto p-10 flex flex-col gap-3">
         <div className="flex justify-between">
           <a className="cursor-pointer hover:underline">Privacy Policy</a>
           <a className="cursor-pointer hover:underline">Terms of Service</a>
