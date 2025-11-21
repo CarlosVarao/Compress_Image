@@ -10,14 +10,21 @@ export default function Footler() {
           <a className="cursor-pointer hover:underline">Terms of Service</a>
         </div>
         <div className="flex justify-center gap-5">
-          <BsGithub
-            fontSize={25}
-            className="cursor-pointer hover:text-[#3C7CFF]"
-          />
-          <BsLinkedin
-            fontSize={25}
-            className="cursor-pointer hover:text-[#3C7CFF]"
-          />
+          <a href="https://github.com/CarlosVarao" target="_blank">
+            <BsGithub
+              fontSize={25}
+              className="cursor-pointer hover:text-[#3C7CFF]"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/carlosvaraofrontend"
+            target="_blank"
+          >
+            <BsLinkedin
+              fontSize={25}
+              className="cursor-pointer hover:text-[#3C7CFF]"
+            />
+          </a>
         </div>
         <p className="text-center">
           © 2025 ImageCompressor. Todos os direitos reservados.
