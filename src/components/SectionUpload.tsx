@@ -118,7 +118,7 @@ export default function SectionUpload() {
                 Arraste e solte suas imagens aqui.
               </p>
               <p className="text-[#979eaa] text-sm text-center max-w-[480px]">
-                Suporta Smart AVIF, WebP, PNG e JPEG. Máx 20 imagens / 5MB.
+                png, jpg, jpeg, tiff, bmp, gif e svg . Máx 10 imagens / 50MB.
               </p>
               <label
                 htmlFor="fileInput"
