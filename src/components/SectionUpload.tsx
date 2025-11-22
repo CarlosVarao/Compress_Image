@@ -56,10 +56,14 @@ export default function SectionUpload() {
           {dataValuesInput.map((item, index) => (
             <div
               key={index}
-              className="border border-gray-700 rounded-sm p-5 border-dashed bg-black/10 flex items-center gap-20"
+              className="border border-gray-700 rounded-sm p-4 border-dashed bg-black/10 flex items-center gap-20"
             >
               <div>
-                <img src={index} alt="sdsd" />
+                <img
+                  src={URL.createObjectURL(item)}
+                  alt="sdsd"
+                  className="w-17 rounded-sm"
+                />
               </div>
               <div className="flex gap-3 items-center">
                 <p>{item.name}</p>

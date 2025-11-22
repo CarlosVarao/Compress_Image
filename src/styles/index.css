@@ -9,3 +9,11 @@
   --text-color-backgound: "#101622";
 }
 
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
+#root {
+  overflow-x: hidden;
+}
