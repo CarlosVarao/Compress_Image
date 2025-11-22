@@ -17,3 +17,20 @@ body {
 #root {
   overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+  height: 8px;  
+  width: 8px;   
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+ background: #3C7CFF;
+ cursor: pointer;
+}
