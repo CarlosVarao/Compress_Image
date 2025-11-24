@@ -95,6 +95,12 @@ export default function SectionUpload() {
     });
   }
 
+  function limparInputImgens() {
+    setOpenSectionImgs(true);
+    setImagens([]);
+    setErrorMensage(null);
+  }
+
   return (
     <div className="flex flex-col gap-10 py-13">
       <div className="flex flex-col gap-7">
@@ -153,11 +159,10 @@ export default function SectionUpload() {
 
               {/* Lista de imagens */}
               <div
-                className={`text-[#f6f6f8] flex w-full h-full  gap-5 ${
-                  fewImages
-                    ? "justify-center"
-                    : "justify-start overflow-x-scroll"
-                }`}
+                className={`text-[#f6f6f8] flex w-full h-full  gap-5 ${fewImages
+                  ? "justify-center"
+                  : "justify-start overflow-x-scroll"
+                  }`}
               >
                 {imagens.map((item, index) => {
                   const original = item.original;
@@ -206,9 +211,9 @@ export default function SectionUpload() {
                           <p>
                             {compressed
                               ? calcularReducaoPercentual(
-                                  original.size,
-                                  compressed.size
-                                )
+                                original.size,
+                                compressed.size
+                              )
                               : "—"}
                           </p>
                         </div>
@@ -236,6 +241,13 @@ export default function SectionUpload() {
             onClick={() => downloadImagens(imagens)}
           >
             Baixar Imagens
+          </button>
+
+          <button
+            className="w-[200px] h-10 cursor-pointer text-[#f6f6f8] px-6 rounded-lg bg-gray-800/70 font-semibold hover:bg-gray-800 transition-all duration-200"
+            onClick={limparInputImgens}
+          >
+            Limpar Tudo
           </button>
         </div>
       </div>
